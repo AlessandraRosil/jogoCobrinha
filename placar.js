@@ -23,4 +23,3 @@ desenhar()
     }
 
 }
-placar.desenhar();

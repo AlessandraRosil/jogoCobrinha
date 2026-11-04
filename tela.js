@@ -1,6 +1,6 @@
 const tela = 
     {
-    cor:"#F2F5F7",
+    cor:"green",
     altura:400,
     largura:800,
     desenhar()
@@ -9,4 +9,3 @@ const tela =
             canvasCtx.fillRect(0,60,this.largura,this.altura)
         }
     }
-tela.desenhar();
