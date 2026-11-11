@@ -1,7 +1,7 @@
 const cobra = 
 {
     cor:"purple",
-    tamanho:10,
+    tamanho:12,
     direcao:"direita",
     x:0,
     y:260,
@@ -16,5 +16,17 @@ const cobra =
         if (this.direcao == 'esquerda') this.x--;
         if (this.direcao == 'cima') this.y--;
         if (this.direcao == 'baixo') this.y++;
+
+        //A Cobra morre quando:
+        if (this.x < 0) this.morrer();
+        if (this.x > 800 - this.tamanho) this.morrer();
+        if (this.y < 60) this.morrer();
+        if (this.y > 460 - this.tamanho) this.morrer();
+    },
+    morrer()
+    {
+        this.vida--;
+        this.x=400;
+        this.y=260;
     }
 }
